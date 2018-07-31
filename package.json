@@ -1,5 +1,5 @@
 {
-  "name": "rmb",
+  "name": "rmb-x",
   "version": "0.1.0",
   "description": "人民币大写, 人民币金额大写, RMB, RMB Upper Case, Amount Of Money",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/michaellyu/rmb.git"
+    "url": "git+https://github.com/michaellyu/rmb-x.git"
   },
   "keywords": [
     "人民币大写",
@@ -19,9 +19,9 @@
   "author": "michaellyu <michaellyu@outlook.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/michaellyu/rmb/issues"
+    "url": "https://github.com/michaellyu/rmb-x/issues"
   },
-  "homepage": "https://github.com/michaellyu/rmb#readme",
+  "homepage": "https://github.com/michaellyu/rmb-x#readme",
   "devDependencies": {
     "intelli-espower-loader": "^1.0.1",
     "mocha": "^5.2.0",
