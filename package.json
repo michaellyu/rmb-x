@@ -1,0 +1,30 @@
+{
+  "name": "rmb",
+  "version": "0.1.0",
+  "description": "人民币大写, 人民币金额大写, RMB, RMB Upper Case, Amount Of Money",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --require intelli-espower-loader ./test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaellyu/rmb.git"
+  },
+  "keywords": [
+    "人民币大写",
+    "人民币金额大写",
+    "RMB",
+    "UpperCase"
+  ],
+  "author": "michaellyu <michaellyu@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michaellyu/rmb/issues"
+  },
+  "homepage": "https://github.com/michaellyu/rmb#readme",
+  "devDependencies": {
+    "intelli-espower-loader": "^1.0.1",
+    "mocha": "^5.2.0",
+    "power-assert": "^1.6.0"
+  }
+}
