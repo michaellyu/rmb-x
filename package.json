@@ -1,6 +1,6 @@
 {
-  "name": "@xiapx/rmb-x",
-  "version": "1.0.0",
+  "name": "@souct/rmb-x",
+  "version": "1.0.1",
   "description": "人民币大写, 人民币金额大写, RMB, RMB Upper Case, Amount Of Money",
   "main": "index.js",
   "scripts": {
