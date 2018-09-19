@@ -6,13 +6,13 @@ RMB-X
 ### Installing
 
 ```shell
-yarn add rmb-x # npm install rmb-x
+ npm install @xiapx/rmb-x
 ```
 
 ### Usage
 
 ```javascript
-const rmb = require('rmb-x');
+const rmb = require('@xiapx/rmb-x');
 
 const v1 = rmb(1.1); // '壹元壹角'
 const v2 = rmb(4321009876543210); // '肆仟叁佰贰拾壹万零玖拾捌亿柒仟陆佰伍拾肆万叁仟贰佰壹拾元整'
