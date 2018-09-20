@@ -19,7 +19,7 @@ const rmb = (value) => {
       } else {
         leftUnitIndex++;
       }
-      if (leftValues[i] > 0 || (i < leftValues.length - 1 && leftValues[i + 1] > 0)) { // 当前位或低一位不为0
+      if (leftValues[i] > 0 || (i < leftValues.length - 1 && leftValues[i + 1] > 0) && leftValues[i] != 0) { // 当前位或低一位不为0
         fragment.unshift(numbers[leftValues[i]]);
       } else if (leftValues[0] == 0 && leftValues.length == 1) {
         fragment.unshift(numbers[leftValues[i]]);
