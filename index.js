@@ -3,7 +3,10 @@ const leftUnits = ['元', '拾', '佰', '仟', '万', '拾', '佰', '仟', '亿'
 const rightUnits = ['角', '分'];
 
 const rmb = (value) => {
-  if ((Object.prototype.toString.call(value) === '[object Number]' && value >= 0.01) || Object.prototype.toString.call(value) === '[object String]') {
+  if (Object.prototype.toString.call(value) === '[object String]') {
+    value = Number(value);
+  }
+  if ((Object.prototype.toString.call(value) === '[object Number]' && value >= 0.01)) {
     const fragment = [];
     const [leftValues, rightValues] = String(value)
       .split('.')
