@@ -1,5 +1,5 @@
 const numbers = ['零', '壹', '贰', '叁', '肆', '伍', '陆', '柒', '捌', '玖'];
-const leftUnits = ['元', '拾', '佰', '仟', '万', '拾', '佰', '仟', '亿', '拾', '佰', '仟', '万', '拾', '佰', '仟'];
+const leftUnits = ['元', '拾', '佰', '仟', '万', '拾', '佰', '仟', '亿', '拾', '佰', '仟', '万', '拾', '佰', '仟', '万'];
 const rightUnits = ['角', '分'];
 
 const rmb = (value) => {
@@ -11,7 +11,7 @@ const rmb = (value) => {
 
     let leftUnitIndex = 0;
     for (let i = leftValues.length - 1; i >= 0; i--) {
-      if ((i === leftValues.length - 1
+      if (((i === leftValues.length - 1 && (leftValues.length > 1 || leftValues[0] > 0)) // 当前位为元位，且整数位不为0
           || (i === leftValues.length - 5 && leftValues.length < 9) // 若不及亿位总是显示万位
           || i === leftValues.length - 9
           || i === leftValues.length - 13)
@@ -30,7 +30,9 @@ const rmb = (value) => {
     } else {
       // 角
       if (rightValues.length > 0) {
-        fragment.push(numbers[rightValues[0]]);
+        if (rightValues[0] > 0 || leftValues.length > 1 || leftValues[0] > 0) { // 角位不为0，或整数位不为0
+          fragment.push(numbers[rightValues[0]]);
+        }
         if (rightValues[0] > 0) { // 角位不为0
           fragment.push(rightUnits[0]);
         }
