@@ -23,6 +23,14 @@ const rmb = (value) => {
     let leftUnitIndex = 0;
     for (let i = leftValueLength - 1; i >= 0; i--) {
       if (
+        leftValues[i] === 0
+        && (i === unit5 || i === unit9 || i === unit13 || i === unit17)
+        && leftValues[i + 1] > 0
+      ) { // 当前位为0，且当前位为万、亿、万亿、万万亿，且低一位不为0
+        fragment.unshift(numbers[leftValues[i]]);
+      }
+
+      if (
         (leftValues[i] > 0)
         || (i === unit1 && hasLeftValue)
         || (i === unit5 && has678Value)
